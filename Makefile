@@ -1,22 +1,21 @@
 # Nome do compilador
 CXX = g++
 
-# Flags de compilação
-CXXFLAGS = -Wall -std=c++11
+# Flags do compilador
+CXXFLAGS = -Wall -g
 
-# Nome do arquivo executável
-TARGET = main.exe
+# Nome do executável
+EXEC = Listaseq
 
-# Nome do arquivo fonte
+# Arquivos fonte
 SRC = Listaseq.cpp
 
-# Regra padrão para compilar o executável
-all: $(TARGET)
+# Regras de compilação
+all: $(EXEC)
 
-# Regra para compilar o executável
-$(TARGET): $(SRC)
-	$(CXX) $(CXXFLAGS) -o $(TARGET) $(SRC)
+$(EXEC): $(SRC)
+	$(CXX) $(CXXFLAGS) -o $(EXEC) $(SRC)
 
-# Limpar os arquivos compilados
+# Regra para limpar arquivos de compilação
 clean:
-	rm -f $(TARGET)
+	rm -f $(EXEC)
