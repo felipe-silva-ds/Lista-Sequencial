@@ -11,7 +11,7 @@ Compilaçao é feita através de um makefile padrão:
 pode ser executado atraves do MAKE.
 
 make
-Isso gerará executável chamado Listaseq.exe.
+Isso gerará executável chamado Listaseq.
 
 # Execução
 Para executar o programa, use o seguinte comando:
