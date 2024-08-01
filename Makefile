@@ -8,7 +8,7 @@ CXXFLAGS = -Wall -std=c++11
 TARGET = main.exe
 
 # Nome do arquivo fonte
-SRC = ListaSeq.cpp
+SRC = Listaseq.cpp
 
 # Regra padrão para compilar o executável
 all: $(TARGET)
